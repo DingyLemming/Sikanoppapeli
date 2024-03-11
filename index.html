@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noppa peli</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <main>
+
+        <div class="player-container left">
+            <section class="player player_0 player_active">
+                <h2 class="name" id="name_0">Player 1</h2>
+                <p class="score" id="score_0">0</p>
+                <div class="current">
+                    <p class="current_label">Current</p>
+                    <p class="current_score" id="current_0">0</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="dice-container">
+            <img src="./kuvat/dice-1.png" alt="Playing dice" class="dice" id="dice_1" />
+            <p class="turn-indicator">Player 1's Turn</p>
+        </section>
+
+        <div class="button-container">
+            <button class="btn btn_new">New Game</button>
+            <button class="btn btn_roll">Roll dice</button>
+            <button class="btn btn_hold">Hold</button>
+            <button class="btn btn_add_dice">Add Dice</button>
+            <button class="btn btn_remove_dice" disabled>Remove Dice</button>
+        </div>
+
+        <div class="player-container right">
+            <section class="player player_1">
+                <h2 class="name" id="name_1">Player 2</h2>
+                <p class="score" id="score_1">0</p>
+                <div class="current">
+                    <p class="current_label">Current</p>
+                    <p class="current_score" id="current_1">0</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn btn_add_player">Add Player</button>
+            <button class="btn btn_edit_names">Edit Names</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
